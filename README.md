@@ -1,6 +1,21 @@
 # sunny-willow.github.io
 <h1>Проверка</h1>
-<section> <!--Секция формы подписки. Секция должна иметь тему-->
+<!DOCTYPE html> <!--!DOCTYPE – директива, которая указывает на спецификацию, по которой был создан документ-->
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Форма подписки и письмо-ответ">
+    <meta name="author" content="Sunny Willow">
+    <title>Форма подписки и письмо-ответ</title>
+    <link rel="icon" href="../../first_website/myowl.ico">
+    <style>
+        td {
+            padding: 10px;
+        }
+    </style>
+</head>
+    <body id="anchor" style="font-family: Arial, Helvetica, sans-serif">
+        <section> <!--Секция формы подписки. Секция должна иметь тему-->
             <form method="post">
                 <table>
                     <thead>
@@ -137,3 +152,5 @@
                 <address>Автор: sunny_willow.ru</address>
             </footer>
         </section>
+    </body>
+</html>
