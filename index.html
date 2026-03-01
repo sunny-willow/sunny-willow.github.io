@@ -1,0 +1,154 @@
+<!DOCTYPE html> <!--!DOCTYPE – директива, которая указывает на спецификацию, по которой был создан документ-->
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Форма подписки и письмо-ответ">
+    <meta name="author" content="Sunny Willow">
+    <title>Форма подписки и письмо-ответ</title>
+    <link rel="icon" href="../../first_website/myowl.ico">
+    <style>
+        td {
+            padding: 10px;
+        }
+    </style>
+</head>
+    <body id="anchor" style="font-family: Arial, Helvetica, sans-serif">
+        <section> <!--Секция формы подписки. Секция должна иметь тему-->
+            <form method="post">
+                <table>
+                    <thead>
+                        <tr>
+                            <td colspan="2"><h2 style="text-align: center;">Хочу подписаться!</h2></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="2">После вашего согласия на подписку вам будут приходить<br>
+                                уведомления на почту и телефон</td>
+                        </tr>
+                        <tr>
+                            <td><label for="name">Ваше имя</label></td>
+                            <td><input type="text" placeholder="Имя" id="name" required style="width: 100%">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="mail">Email</label></td>
+                            <td><input type="email" placeholder="email@mail.ru" required id="mail"
+                                style="width: 100%"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="phone">Телефон</label></td>
+                            <td><input type="tel" required pattern="89[0-9]{9}" placeholder="89990004466"
+                                id="phone" style="width: 100%"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Хочу получать уведомления:<br>
+                            <input type="checkbox" id="mailcheck" checked><label for="mailcheck">на почту</label><br>
+                            <input type="checkbox" id="phonecheck"><label for="phonecheck">на телефон</label>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button style="background-color: #ffffff; border-color: #c9c9c9;
+                                border-width: thin; width: 140px; height: 30px;">Подписаться</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </section>
+        <hr>
+        <section> <!--Секция письма-ответа-->
+            <table>
+                <tbody>
+                    <tr>
+                        <td colspan="2" style="text-align: center;"><h3>Письмо-ответ</h3></td>
+                    </tr>
+                    <tr>
+                        <td>Здравствуйте!</td>
+                        <td rowspan="2"><img src="../../first_website/myowl.ico" alt="мой логотип" title="логотип"
+                            width="40"></td>
+                    </tr>
+                    <tr>
+                        <td>Вы подписались на уведомления о моих новостях<br></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Уведомления будут приходить вам на этот<br>
+                            email и на указанный вами телефон &ndash;<br>
+                            +79ххххххх66.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Для подтверждения перейдите по <a href="">ссылке</a>.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="padding-top: 50px;">
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <small>
+                                <a href="mailto:sunny_willow@mail.ru">Пожаловаться</a>
+                            </small>
+                        </td>
+                        <td>
+                            <small>
+                                &copy; 2026, <a href="https://sunny-willow.ru/" title="Солнечная Ива" target="_blank">Солнечная Ива
+                                </a>
+                            </small>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <hr>
+        <br>
+        <br>
+        <section> <!--Время выполнения и заметки-->
+            <h4>Время выполнения:</h4><span>17.02.2026 &ndash; 23.02.2026</span>
+            <h3>Заметки, проверка работы элементов</h3>
+            <!--Open Graph – возможность связывать свой контент с социальными сетями и правильно его там представлять-->
+            <ol type="I"> <!--нумерованный список-->
+                <li>Первый</li>
+                <li>Второй</li>
+                <li>Третий
+                    <ul> <!--ненумерованный список-->
+                        <li>3,12</li>
+                        <li>3,01</li>
+                    </ul>
+                </li>
+                <li>Четвертый</li>
+                <li>Пятый</li>
+            </ol>
+            <a href="#anchor">Вернуться наверх</a> <!--Якорь по id-->
+            <p>
+                <input type="text" value="Текстовое поле">
+                <input type="file">
+            </p>
+            <p>
+                <select name="letter">
+                    <option selected>Выберите букву</option>
+                    <option value="Аз">Аз</option>
+                    <option value="Боги">Боги</option>
+                    <option value="Веди">Веди</option>
+                    <option value="Глаголи">Глаголи</option>
+                </select>
+            </p>
+            <p>
+                <textarea rows="7"
+                    cols="37"
+                    name="text"
+                    placeholder="Введите текст">Привет, меня зовут</textarea>
+            </p>
+            <article>
+                <p><abbr title="World Wide Web">WWW</abbr><!-- Аббревиатура -->
+                    &ndash; это глобальная система взаимосвязанных веб-страниц, к которым можно
+                    получить доступ через интернет.</p>
+                <p>Проще говоря, это <span style="color: green">онлайн-библиотека</span>, где вместо книг &ndash; веб-страницы,
+                    а вместо каталогов &ndash; гиперссылки, позволяющие мгновенно переходить от одного документа к другому. </p>
+            </article>
+            <footer>
+                <p>Последняя модификация: <time>2026-02-26</time></p>
+                <address>Автор: sunny_willow.ru</address>
+            </footer>
+        </section>
+    </body>
+</html>
